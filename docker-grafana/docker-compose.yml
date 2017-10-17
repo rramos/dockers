@@ -4,6 +4,7 @@ networks:
   default:
     external:
       name: dockers
+
 services:
   grafana:
     container_name: grafana
