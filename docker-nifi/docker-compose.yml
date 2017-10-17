@@ -1,0 +1,16 @@
+version: '2'
+
+networks:
+  default:
+    external:
+      name: dockers
+
+services:
+  nifi:
+    container_name: nifi
+    ports:
+     - "8787:8080"
+    volumes:
+     - ./data:/opt/data
+    image: "apache/nifi:1.4.0"
+

@@ -1,0 +1,14 @@
+version: '2'
+services:
+  rundeck:
+    environment:
+       - SERVER_URL=https://localhost:4443
+    container_name: rundeck
+    ports:
+     - "4440:4440"
+    volumes:
+     - ./data:/opt/data
+     - ./logs:/var/lib/rundeck/logs
+     - ./storage:/var/lib/rundeck/var/storage
+     - ./mysql:/var/lib/mysql
+    image: "jordan/rundeck:latest"
