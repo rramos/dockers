@@ -4,9 +4,10 @@ services:
   moodle_db:
     container_name: moodle_db
     ports:
-     - "3306:3306"
+     - "6306:3306"
     environment:
      - MYSQL_DATABASE=moodle
+     - MYSQL_ROOT_PASSWORD=root
      - MYSQL_USER=moodle
      - MYSQL_PASSWORD=moodle
     image: "centurylink/mysql"
@@ -17,7 +18,7 @@ services:
     volumes:
      - ./data:/opt/data
     environment:
-     - MOODLE_URL=http://127.0.0.1:5050
+     - MOODLE_URL=http://192.168.1.64:5050
     image: "jauer/moodle"
     links:
      - moodle_db

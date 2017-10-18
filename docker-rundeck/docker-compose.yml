@@ -2,7 +2,8 @@ version: '2'
 services:
   rundeck:
     environment:
-       - SERVER_URL=https://localhost:4443
+       - SERVER_URL=http://localhost:4440
+       - RUNDECK_WITH_SSL=false
     container_name: rundeck
     ports:
      - "4440:4440"

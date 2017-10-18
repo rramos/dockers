@@ -10,6 +10,7 @@ project teams throughout the entire project life cycle.
 Just run docker compose
 
 ```
+mkdir pgdata
 docker-compose up -d
 ```
 

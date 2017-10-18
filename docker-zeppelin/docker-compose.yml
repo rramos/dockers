@@ -1,7 +1,7 @@
 version: '2'
 services:
   zeppelin:
-  container_name: zeppelin
+    container_name: zeppelin
     ports:
      - "8080:8080"
     volumes:
