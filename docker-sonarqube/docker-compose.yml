@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  sonarqube:
+    restart: always
+    container_name: sonarqube
+    environment:
+      - SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true
+    ports:
+     - "9000:9000"
+    image: "sonarqube:latest"
+
