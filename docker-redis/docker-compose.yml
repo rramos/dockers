@@ -1,5 +1,5 @@
 services:
-  portainer:
+  redis:
     restart: always
     container_name: redis
     ports:
