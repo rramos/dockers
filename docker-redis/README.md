@@ -12,3 +12,6 @@ Just run docker compose
 docker-compose up -d
 ```
 
+## Metadata
+
+**Last Verified:** 2024/12/04
