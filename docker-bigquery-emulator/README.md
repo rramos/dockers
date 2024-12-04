@@ -41,3 +41,7 @@ bq --api http://0.0.0.0:9050 query  --project_id=test "SELECT * FROM dataset1.ta
 ## References
 
 * https://github.com/goccy/bigquery-emulator
+
+## Metadata
+
+**Last Verified:** 2024/12/04
