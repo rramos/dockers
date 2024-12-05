@@ -1,11 +1,9 @@
-version: "2"
+---
 services:
-  portainer:
-    restart: always
-    container_name: presto
+  presto:
     ports:
       - 7575:8080
     volumes:
       - ./data:/data
       - /var/run/docker.sock:/var/run/docker.sock
-    image: ahanaio/prestodb-sandbox
+    image: prestodb/presto:latest
