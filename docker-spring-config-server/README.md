@@ -17,3 +17,7 @@ docker-compose up -d
 The server will use the configuration from the following git repo
 
 - <https://github.com/rramos/config-server.git>
+
+## Metadata
+
+**Last Verified:** 2024/12/05
