@@ -14,7 +14,3 @@ Just select the component you want to use and read each `README` file
 ## Recommendation
 
 **Portainer** could be used to manage the containers with a grafical interface, I would suggest you start from there.
-
-## Testing
-
-TBD
