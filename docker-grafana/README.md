@@ -12,4 +12,8 @@ Just run docker compose
 docker-compose up -d
 ```
 
-And access the web interface <http://localhost:3000>
+And access the web interface <http://localhost:3000> provide default credentials `admin/admin`
+
+## Metadata
+
+**Last Verified:** 2024/12/05

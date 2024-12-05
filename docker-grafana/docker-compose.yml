@@ -1,13 +1,6 @@
-version: "2"
-
-networks:
-  default:
-    external:
-      name: dockers
-
+---
 services:
   grafana:
-    container_name: grafana
     ports:
       - 3000:3000
     volumes:
