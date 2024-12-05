@@ -1,14 +1,14 @@
-version: '2'
+version: "2"
 
 services:
   openproject:
     restart: always
     container_name: openproject
     ports:
-     - "6060:8080"
+      - 6060:8080
     volumes:
-     - ./data:/opt/data
-     - ./pgdata:/var/lib/postgresql/9.4/main 
-     - ./logs:/var/log/supervisor 
-     - ./static:/var/db/openproject 
-    image: "openproject/community"
+      - ./data:/opt/data
+      - ./pgdata:/var/lib/postgresql/9.4/main
+      - ./logs:/var/log/supervisor
+      - ./static:/var/db/openproject
+    image: openproject/community

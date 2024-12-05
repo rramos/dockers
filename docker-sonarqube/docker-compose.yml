@@ -1,4 +1,4 @@
-version: '2'
+version: "2"
 
 services:
   sonarqube:
@@ -7,6 +7,5 @@ services:
     environment:
       - SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true
     ports:
-     - "9000:9000"
-    image: "sonarqube:latest"
-
+      - 9000:9000
+    image: sonarqube:latest

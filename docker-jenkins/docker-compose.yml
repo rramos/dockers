@@ -1,4 +1,4 @@
-version: '2'
+version: "2"
 
 networks:
   default:
@@ -9,9 +9,9 @@ services:
   jenkins:
     container_name: jenkins
     ports:
-     - "9090:8080"
-     - "50000:50000"
+      - 9090:8080
+      - 50000:50000
     volumes:
-     - ./data:/opt/data
-     - ./jenkins_home:/var/jenkins_home
-    image: "jenkins/jenkins"
+      - ./data:/opt/data
+      - ./jenkins_home:/var/jenkins_home
+    image: jenkins/jenkins

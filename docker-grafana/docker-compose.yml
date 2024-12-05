@@ -1,4 +1,4 @@
-version: '2'
+version: "2"
 
 networks:
   default:
@@ -9,7 +9,7 @@ services:
   grafana:
     container_name: grafana
     ports:
-     - "3000:3000"
+      - 3000:3000
     volumes:
-     - ./data:/opt/data
-    image: "grafana/grafana"
+      - ./data:/opt/data
+    image: grafana/grafana

@@ -1,10 +1,9 @@
 services:
   bigquery-emulator:
     ports:
-     - "9050:9050"
+      - 9050:9050
     volumes:
-     - ./data:/data
-    image: "ghcr.io/goccy/bigquery-emulator:latest"
+      - ./data:/data
+    image: ghcr.io/goccy/bigquery-emulator:latest
     container_name: bigquery-emulator
-    command: "bigquery-emulator --project=test"
-
+    command: bigquery-emulator --project=test

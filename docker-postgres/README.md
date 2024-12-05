@@ -1,4 +1,4 @@
-# PostgreSQL 
+# PostgreSQL
 
 ## Description
 
@@ -8,23 +8,30 @@ PostgreSQL service and PgAdmin
 
 Just run docker compose
 
-```
+```sh
 docker-compose up -d
 ```
 
 ## Management
 
-Access the web interface http://localhost:5050
+Access the web interface <http://localhost:5050>
 
-* Login with:
-  * username: admin@admin.com
-  * password: root
+- Login with:
 
-* Setup new server
- * Host: postgres
- * Port: 5432
- * Username: admin
- * Password: root
+```sh
+- username: admin@admin.com
+- password: root
+```
+
+- Setup new server
+
+- Host: postgres
+
+- Port: 5432
+
+- Username: admin
+
+- Password: root
 
 **NOTE:** Don't use this setup in live enviroments, this is only intended for local use
 
@@ -32,10 +39,6 @@ Access the web interface http://localhost:5050
 
 One can test directly the connection with the psql command
 
-```
+```sh
 psql -h localhost -p 5432 -U admin postgres
 ```
-
-
-
-

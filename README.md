@@ -2,34 +2,19 @@
 
 Just a list of docker-composer repos for several tecnologies
 
-# Requirements
+## Requirements
 
-* You must have docker working properly and make sure your user belongs to docker group
-* Make usre you have docker-compose
+- You must have `docker` working properly and make sure your user belongs to docker group
+- Make sure you have `docker-compose`
 
-# Pre-setup
+## How to use
 
-Create a default docker network
+Just select the component you want to use and read each `README` file
 
-```
-docker network create dockers
-```
+## Recommendation
 
-# Requirements
+**Portainer** could be used to manage the containers with a grafical interface, I would suggest you start from there.
 
-Just select the docker you want to start.
+## Testing
 
-Portainer could be used to manage all this in a grafical interface.
-
-In case you use conky and the following in .conkyrc
-
-```
-${color}${execi 300  docker ps --format "{{.Names}}" }${color}
-```
-
-Check this repo for an example:  https://github.com/rramos/conkyrc
-
-# Testing dockers
-
-Testing dockers in _draft folder
-
+TBD

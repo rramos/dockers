@@ -2,18 +2,16 @@
 
 ## Description
 
-
 ## Setup
 
 Just run docker compose
 
-```
+```sh
 docker-compose up -d
 ```
 
-# Post Install
+## Post Install
 
-Login with `admin|admin` on the url:  http://localhost:9000 
+Login with `admin|admin` on the url: <http://localhost:9000>
 
 Create a testproject and generate a token by following the wizard
- 

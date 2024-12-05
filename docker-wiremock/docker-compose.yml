@@ -3,7 +3,7 @@ services:
     restart: always
     container_name: wiremock
     ports:
-     - "8585:8585"
+      - 8585:8585
     volumes:
-     - ./data:/data
-    image: "wiremock/wiremock:3.9.2"
+      - ./data:/data
+    image: wiremock/wiremock:3.9.2

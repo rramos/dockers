@@ -8,10 +8,8 @@ Moodle is a free, online Learning Management system enabling educators to create
 
 Just run docker compose
 
-```
+```sh
 docker-compose up -d
 ```
 
-And access the web interface http://localhost:5050
-
-
+And access the web interface <http://localhost:5050>

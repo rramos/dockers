@@ -8,16 +8,16 @@ Bigquery emulator docker container
 
 Just run docker compose
 
-```
+```sh
 docker-compose up -d
 ```
 
-Example with `bq` sdk 
+Example with `bq` sdk
 
 ### Create dataset
 
 ```sh
-bq --api http://0.0.0.0:9050 mk  --project_id=test --dataset --description="Test dataset" dataset1
+bq --api http://0.0.0.0:9050 mk --project_id=test --dataset --description="Test dataset" dataset1
 ```
 
 ### Create a table
@@ -29,18 +29,18 @@ bq --api http://0.0.0.0:9050 mk --project_id=test --table --description="table1"
 ### Insert data
 
 ```sh
-bq --api http://0.0.0.0:9050 query  --project_id=test "INSERT dataset1.table1(qtr,sales,year) VALUES('foo',12.3,'2024')"
+bq --api http://0.0.0.0:9050 query --project_id=test "INSERT dataset1.table1(qtr,sales,year) VALUES('foo',12.3,'2024')"
 ```
 
 ### Query data
 
 ```sh
-bq --api http://0.0.0.0:9050 query  --project_id=test "SELECT * FROM dataset1.table1"
+bq --api http://0.0.0.0:9050 query --project_id=test "SELECT * FROM dataset1.table1"
 ```
 
 ## References
 
-* https://github.com/goccy/bigquery-emulator
+- <https://github.com/goccy/bigquery-emulator>
 
 ## Metadata
 

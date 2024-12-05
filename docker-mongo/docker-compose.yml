@@ -3,7 +3,7 @@ services:
     restart: always
     container_name: mongo
     ports:
-     - "27017:27017"
+      - 27017:27017
     volumes:
-     - ./data:/data
-    image: "mongo"
+      - ./data:/data
+    image: mongo

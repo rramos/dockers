@@ -8,23 +8,22 @@ Redpanda is a simple, powerful, and cost-efficient streaming data platform that 
 
 Just run docker compose
 
-```
+```sh
 docker-compose up -d
 ```
 
 Check status with
 
-```
+```sh
 docker exec -it redpanda-0 rpk cluster info
 ```
 
 Create topic chat-room with
 
-```
+```sh
 docker exec -it redpanda-0 rpk topic create chat-room
 ```
 
 The following article provides more info:
-* https://rramos.github.io/2024/02/14/redpanda
 
-
+- <https://rramos.github.io/2024/02/14/redpanda>

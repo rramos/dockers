@@ -8,10 +8,8 @@ Apache NiFi supports powerful and scalable directed graphs of data routing, tran
 
 Just run docker compose
 
-```
+```sh
 docker-compose up -d
 ```
 
-And access the web interface http://localhost:8787
-
-
+And access the web interface <http://localhost:8787>

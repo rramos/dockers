@@ -8,7 +8,7 @@ Spring Config Server
 
 Just run docker compose
 
-```
+```sh
 docker-compose up -d
 ```
 
@@ -16,4 +16,4 @@ docker-compose up -d
 
 The server will use the configuration from the following git repo
 
-* https://github.com/rramos/config-server.git
+- <https://github.com/rramos/config-server.git>

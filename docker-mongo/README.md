@@ -8,7 +8,6 @@ Mongodb docker container
 
 Just run docker compose
 
-```
+```sh
 docker-compose up -d
 ```
-
