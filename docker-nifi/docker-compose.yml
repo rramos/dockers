@@ -1,15 +1,11 @@
-version: "2"
-
-networks:
-  default:
-    external:
-      name: dockers
-
+---
 services:
   nifi:
-    container_name: nifi
+    environment:
+      SINGLE_USER_CREDENTIALS_USERNAME: ${SINGLE_USER_CREDENTIALS_USERNAME}
+      SINGLE_USER_CREDENTIALS_PASSWORD: ${SINGLE_USER_CREDENTIALS_PASSWORD}
     ports:
-      - 8787:8080
+      - 8787:8443
     volumes:
       - ./data:/opt/data
-    image: apache/nifi:1.4.0
+    image: apache/nifi
