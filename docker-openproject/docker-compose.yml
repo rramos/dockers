@@ -1,14 +1,12 @@
-version: "2"
-
+---
 services:
   openproject:
-    restart: always
-    container_name: openproject
+    environment:
+      OPENPROJECT_HTTPS: "false"
+      OPENPROJECT_HOST__NAME: localhost:6060
     ports:
       - 6060:8080
     volumes:
-      - ./data:/opt/data
-      - ./pgdata:/var/lib/postgresql/9.4/main
-      - ./logs:/var/log/supervisor
-      - ./static:/var/db/openproject
-    image: openproject/community
+      - ./pgdata:/var/openproject/pgdata
+      - ./assets:/var/openproject/assets
+    image: openproject/openproject:15
