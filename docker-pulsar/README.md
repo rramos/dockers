@@ -14,22 +14,24 @@ docker-compose up -d
 
 ## Test
 
-Install a pulsar client to test
+### Dependencies
 
 ```sh
-pip install pulsar-client
-```
-
-The run the producer to produce some test messages
-
-```sh
-python producer.py
+python -m venv venv
+source  venv/bin/activate
+pip install -r requirements.txt
 ```
 
 In a different terminal launch a consumer
 
 ```sh
 python consumer.py
+```
+
+The run the producer to produce some test messages
+
+```sh
+python producer.py
 ```
 
 Get topic statistics
@@ -41,3 +43,7 @@ curl http://localhost:3838/admin/v2/persistent/public/default/my-topic/stats | p
 ## Documentation
 
 - <https://pulsar.apache.org>
+
+## Metadata
+
+**Last Verified:** 2024/12/07
