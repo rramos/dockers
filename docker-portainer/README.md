@@ -13,3 +13,7 @@ docker-compose up -d
 ```
 
 And access the web interface <http://localhost:9000>
+
+## Metadata
+
+**Last Verified:** 2024/12/07
