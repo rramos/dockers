@@ -12,7 +12,7 @@ Just run docker compose
 docker-compose up -d
 ```
 
-Then access the browser on http://localhost:3000 and setup the initial account
+Then access the browser on <http://localhost:3000> and setup the initial account
 
 ## Metadata
 
