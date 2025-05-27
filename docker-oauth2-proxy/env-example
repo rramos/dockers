@@ -1,0 +1,13 @@
+# Example mock data
+OAUTH2_PROXY_COOKIE_DOMAINS="mydomain.com"
+OAUTH2_PROXY_HTTP_ADDRESS="0.0.0.0:4180"
+OAUTH2_PROXY_CLIENT_SECRET="hj7229sh-gHuiysdgwgwd9100w"
+OAUTH2_PROXY_CLIENT_ID="234867fghsdfmnxcuisdsdfipsaimq.apps.googleusercontent.com"
+OAUTH2_PROXY_PROVIDER="google"
+OAUTH2_PROXY_REDIRECT_URL="https://mydomain/oauth2/callback"
+OAUTH2_PROXY_COOKIE_SECRET="89kpNYNbNY_QiF2lXoGCCpMourts5K0ZtBI6UrtFwFA="
+OAUTH2_PROXY_SESSION_STORE_TYPE="cookie"
+OAUTH2_PROXY_SCOPE="openid https://www.googleapis.com/auth/userinfo.email"
+WHITELIST_DOMAIN="*.mydomain.com"
+COOKIE_DOMAIN="mydomain.com"
+HOST_PORT="4180"

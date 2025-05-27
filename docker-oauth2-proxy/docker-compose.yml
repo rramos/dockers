@@ -1,0 +1,36 @@
+services:
+  oauth2-proxy:
+    image: quay.io/oauth2-proxy/oauth2-proxy
+    container_name: oauth2-proxy
+    restart: always
+    volumes:
+      - ./auth_users:/etc/oauth2_proxy/auth_users
+    command:
+      - --http-address
+      - ${OAUTH2_PROXY_HTTP_ADDRESS}
+      - --cookie-domain
+      - ${COOKIE_DOMAIN}
+      - --whitelist-domain=${WHITELIST_DOMAIN}
+      - --authenticated-emails-file=/etc/oauth2_proxy/auth_users
+    environment:
+      - OAUTH2_PROXY_COOKIE_SECRET=${OAUTH2_PROXY_COOKIE_SECRET}
+      - OAUTH2_PROXY_CLIENT_ID=${OAUTH2_PROXY_CLIENT_ID}
+      - OAUTH2_PROXY_CLIENT_SECRET=${OAUTH2_PROXY_CLIENT_SECRET}
+      - OAUTH2_PROXY_PROVIDER=google
+      - OAUTH2_PROXY_EMAIL_DOMAINS=
+      - OAUTH2_PROXY_GITHUB_USER="github_username"
+      - OAUTH2_PROXY_REDIRECT_URL=${OAUTH2_PROXY_REDIRECT_URL}
+      - OAUTH2_PROXY_HTTP_ADDRESS=${OAUTH2_PROXY_HTTP_ADDRESS}
+      - OAUTH2_PROXY_COOKIE_DOMAINS=${OAUTH2_PROXY_COOKIE_DOMAINS}
+      - OAUTH2_PROXY_SESSION_STORE_TYPE=cookie
+      - OAUTH2_PROXY_COOKIE_SAMESITE=lax
+      - OAUTH2_PROXY_REVERSE_PROXY=true
+      - OAUTH2_PROXY_COOKIE_CSRF_PER_REQUEST=true
+      - OAUTH2_PROXY_COOKIE_CSRF_EXPIRE=5m
+      - OAUTH2_PROXY_SCOPE=openid https://www.googleapis.com/auth/userinfo.email
+      - OAUTH2_PROXY_SKIP_PROVIDER_BUTTON=false
+      - OAUTH2_PROXY_PASS_USER_HEADERS=true
+      - OAUTH2_PROXY_SET_XAUTHREQUEST=true
+    ports:
+      - ${HOST_PORT}:4180
+      - 8081:8081
