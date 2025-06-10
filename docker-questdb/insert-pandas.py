@@ -15,6 +15,6 @@ df = pd.DataFrame(
     }
 )
 
-conf = f"http::addr=172.25.0.2:9000;"
+conf = "http::addr=172.25.0.2:9000;"
 with Sender.from_conf(conf) as sender:
     sender.dataframe(df, table_name="trades", at=datetime.now())
