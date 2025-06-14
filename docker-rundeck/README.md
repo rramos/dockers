@@ -6,15 +6,12 @@ Rundeck is open source software that helps you automate routine operational proc
 
 Rundeck allows you to run tasks on any number of nodes from a web-based or command-line interface. Rundeck also includes other features that make it easy to scale up your automation efforts including: access control, workflow building, scheduling, logging, and integration with external sources for node and option data.
 
-
 ## Start the docker image
 
 Just run docker compose
 
-```
+```sh
 docker-compose up -d
 ```
 
-And access the web interface http://localhost:4440
-
-
+And access the web interface <http://localhost:4440>

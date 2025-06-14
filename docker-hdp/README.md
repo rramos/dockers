@@ -8,11 +8,10 @@ Hortonworks Sandbox for HDP and HDF is a quick and easy personal desktop environ
 
 Just run docker compose
 
-```
+```sh
 docker-compose up -d
 ```
 
 ## Info
 
-* https://hortonworks.com/tutorial/learning-the-ropes-of-the-hortonworks-sandbox/
-
+- <https://hortonworks.com/tutorial/learning-the-ropes-of-the-hortonworks-sandbox>

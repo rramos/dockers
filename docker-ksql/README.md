@@ -8,9 +8,8 @@ KSQL is an open source streaming SQL engine for Apache Kafka. It provides a simp
 
 Just run docker compose
 
-```
+```sh
 docker-compose up -d
 ```
 
 This composer will create several dockers with data generators cli kafka zookeeper and shcema register
-

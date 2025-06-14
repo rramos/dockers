@@ -1,0 +1,9 @@
+---
+services:
+  presto:
+    ports:
+      - 7575:8080
+    volumes:
+      - ./data:/data
+      - /var/run/docker.sock:/var/run/docker.sock
+    image: prestodb/presto:latest

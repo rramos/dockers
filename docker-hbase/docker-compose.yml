@@ -1,4 +1,4 @@
-version: '2'
+version: "2"
 
 networks:
   default:
@@ -7,11 +7,11 @@ networks:
 
 services:
   hbase:
-    container_name:  hbase
+    container_name: hbase
     ports:
-     - "9095:9095"
-     - "8095:8095"
-     - "16010:16010"
+      - 9095:9095
+      - 8095:8095
+      - 16010:16010
     volumes:
-     - ./data:/opt/data
-    image: "dajobe/hbase"
+      - ./data:/opt/data
+    image: dajobe/hbase

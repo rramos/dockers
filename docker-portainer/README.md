@@ -8,10 +8,12 @@ PORTAINER IS AN OPEN-SOURCE LIGHTWEIGHT MANAGEMENT UI WHICH ALLOWS YOU TO EASILY
 
 Just run docker compose
 
-```
+```sh
 docker-compose up -d
 ```
 
-And access the web interface http://localhost:9000
+And access the web interface <http://localhost:9000>
 
+## Metadata
 
+**Last Verified:** 2024/12/07
