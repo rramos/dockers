@@ -1,0 +1,5 @@
+services:
+  hollama:
+    ports:
+      - 4173:4173
+    image: zpfhyj/hollama
